@@ -1,7 +1,6 @@
-# Contenedores y Orquestadores
-## Docker
+# Docker
 
-### Instalación de Docker
+## Instalación de Docker
 
 Windows:
 - Microsoft Windows 10 Professional or Enterprise 64-bit or Windows 10: https://store.docker.com/editions/community/docker-ce-desktop-windows 
