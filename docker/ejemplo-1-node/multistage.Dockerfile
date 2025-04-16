@@ -18,7 +18,7 @@ RUN npm install --only=production
 FROM node:lts-alpine
 
 # Especificamos esta variable para la correcta ejecución de las librerías en modo de producción
-ENV NODE_ENV production
+ENV NODE_ENV=production
 
 # Definimos el directorio de trabajo en /usr/src/app/
 WORKDIR /usr/src/app
