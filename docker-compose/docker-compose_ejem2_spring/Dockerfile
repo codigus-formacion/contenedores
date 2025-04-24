@@ -23,10 +23,10 @@ FROM eclipse-temurin:21-jre
 WORKDIR /usr/src/app/
 
 # Copia el JAR del contenedor de compilación
-COPY --from=builder /project/target/*.jar /usr/src/app/
+COPY --from=builder /project/target/*.jar /usr/src/app/app.jar
 
 # Indica el puerto que expone el contenedor
 EXPOSE 8080
 
 # Comando que se ejecuta al hacer docker run
-CMD [ "java", "-jar", "spring-webapp-0.1.0.jar" ] 
+CMD [ "java", "-jar", "app.jar" ]
