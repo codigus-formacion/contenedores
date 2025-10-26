@@ -12,10 +12,13 @@ services:
   db:
     image: mongo:8.0-noble
     volumes:
-      - ./mongo:/data/db
+      - db_data:/data/db
     healthcheck:
-      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
       interval: 5s
       timeout: 5s
       start_period: 10s
       retries: 5
+
+volumes:
+  db_data:
