@@ -1,8 +1,6 @@
 services:
   telemetry-analyzer:
     build: .
-    ports:
-      - 8888:8888
     environment:
       - JUPYTER_TOKEN=MY_SECRET
       - INFLUXDB_HOST=http://influxdb3:8181
