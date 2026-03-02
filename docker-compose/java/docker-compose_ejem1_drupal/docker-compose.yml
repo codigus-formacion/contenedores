@@ -6,7 +6,7 @@ services:
       - 8080:80
 
   mysql:
-    image: mysql:9.2
+    image: mysql:9.6
     environment:
       MYSQL_ROOT_PASSWORD: pass
       MYSQL_DATABASE: drupal
