@@ -1,5 +1,5 @@
 # Imagen base para el contenedor de compilación
-FROM maven:3.9.9-eclipse-temurin-21-jammy AS builder
+FROM maven:3.9-eclipse-temurin-21 AS builder
 
 # Define el directorio de trabajo donde ejecutar comandos
 WORKDIR /project
